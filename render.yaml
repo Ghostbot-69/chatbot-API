@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: chatbot-api
+    env: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: API_KEY
+        value: "hAaOs1YFsH9DbKkYNjfFJl+NfQ5oeBi0V8gM5XTMW1E="
+    branches:
+      - main
+
